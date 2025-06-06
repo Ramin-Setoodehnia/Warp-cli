@@ -12,7 +12,7 @@ fi
 
 # ========== Colors & Version ==========
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[0;33m'; CYAN='\033[0;36m'; NC='\033[0m'
-VERSION="1.0.3"
+VERSION="1.0"
 
 # [[ $EUID -ne 0 ]] && echo -e "${RED}Run this script as root.${NC}" && exit 1
 
@@ -83,33 +83,33 @@ dvhost_warp_draw_menu() {
     [[ "$is_connected" == "yes" ]] && socks5_ip=$(curl -s --socks5 "${proxy_ip}:${proxy_port}" https://ifconfig.me || echo "N/A")
 
     cat << "EOF"
-+------------------------------------------------------------------------+
-|       ██╗    ██╗ █████╗ ██████╗ ██████╗        ██████╗██╗     ██╗
-|       ██║    ██║██╔══██╗██╔══██╗██╔══██╗      ██╔════╝██║     ██║
-|       ██║ █╗ ██║███████║██████╔╝██████╔╝█████╗██║     ██║     ██║
-|       ██║███╗██║██╔══██║██╔══██╗██╔═══╝ ╚════╝██║     ██║     ██║
-|       ╚███╔███╔╝██║  ██║██║  ██║██║           ╚██████╗███████╗██║
-|        ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝            ╚═════╝╚══════╝╚═╝
-+------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+|   ██╗    ██╗ █████╗ ██████╗ ██████╗        ██████╗██╗     ██╗     |
+|   ██║    ██║██╔══██╗██╔══██╗██╔══██╗      ██╔════╝██║     ██║     |
+|   ██║ █╗ ██║███████║██████╔╝██████╔╝█████╗██║     ██║     ██║     |
+|   ██║███╗██║██╔══██║██╔══██╗██╔═══╝ ╚════╝██║     ██║     ██║     |
+|   ╚███╔███╔╝██║  ██║██║  ██║██║           ╚██████╗███████╗██║     |
+|    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝            ╚═════╝╚══════╝╚═╝     |
++-------------------------------------------------------------------+
 EOF
-echo -e "| Telegram Channel : ${YELLOW}@DVHOST_CLOUD${NC} | YouTube : ${RED}@dvhost_cloud${NC} | Version : ${GREEN}${VERSION}${NC} "
-    echo +------------------------------------------------------------------------+
-    echo -e "| IPv4        : ${YELLOW}$(curl -s ipv4.icanhazip.com)${NC}"
+echo -e "|Telegram Channel:${YELLOW}@DVHOST_CLOUD${NC} |YouTube:${RED}@dvhost_cloud${NC} | Version:${GREEN}${VERSION}${NC} "
+    echo +-------------------------------------------------------------------+
+    # echo -e "| IPv4        : ${YELLOW}$(curl -s ipv4.icanhazip.com)${NC}"
     if [[ "$is_connected" == "yes" ]]; then
-        echo -e "| WARP Status : ${GREEN}CONNECTED${NC} | Proxy: ${proxy_ip}:${proxy_port} | Out IP: ${socks5_ip}"
+        echo -e "|WARP Status: ${GREEN}CONNECTED${NC} |Proxy:${proxy_ip}:${proxy_port} |Out IP:${socks5_ip}"
     else
-        echo -e "| WARP Status : ${RED}NOT CONNECTED${NC}"
+        echo -e "|WARP Status: ${RED}NOT CONNECTED${NC}"
     fi
-    echo +------------------------------------------------------------------------+
+    echo +-------------------------------------------------------------------+
     echo -e "| ${YELLOW}Choose an option:${NC}"
-    echo +------------------------------------------------------------------------+
+    echo +-------------------------------------------------------------------+
     echo -e "| 1 - Install WARP"
     # echo -e "| 2 - Connect to WARP Proxy"
     echo -e "| 2 - Show Status"
     echo -e "| 3 - Test Proxy"
     echo -e "| 4 - Remove WARP"
     echo -e "| 0 - Exit"
-    echo +------------------------------------------------------------------------+
+    echo +-------------------------------------------------------------------+
     echo -ne "${YELLOW}Select option: ${NC}"
 }
 
