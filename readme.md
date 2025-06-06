@@ -3,6 +3,12 @@
 A simple and powerful interactive CLI menu for installing, managing, and using [Cloudflare WARP](https://1.1.1.1/) on Ubuntu servers, with a beautiful layout inspired by warp-cli.  
 It installs itself on first run as `warp-menu`.
 
+
+## 📦 Installation
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/dev-ir/warp-cli/refs/heads/master/main.sh)
+```
+
 ---
 
 ## 🚀 Features
@@ -15,11 +21,6 @@ It installs itself on first run as `warp-menu`.
 - 🖥️ Self-installs as global command: `warp-menu`
 
 ---
-
-## 📦 Installation
-```bash
-bash <(curl -Ls https://raw.githubusercontent.com/dev-ir/warp-cli/refs/heads/master/main.sh)
-```
 
 ## 🖥️ Supported Operating Systems
 - **Ubuntu 22+** (Recommended for best compatibility)
