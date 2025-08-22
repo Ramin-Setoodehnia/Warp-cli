@@ -12,7 +12,7 @@ fi
 
 # ========== Colors & Version ==========
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[0;33m'; BLUE='\033[0;34m'; CYAN='\033[0;36m'; NC='\033[0m'
-VERSION="1.1"
+VERSION="1.2"
 
 # [[ $EUID -ne 0 ]] && echo -e "${RED}Run this script as root.${NC}" && exit 1
 
