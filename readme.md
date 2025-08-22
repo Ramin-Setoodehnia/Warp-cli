@@ -6,7 +6,7 @@ It installs itself on first run as `warp-menu`.
 
 ## 📦 Installation
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/dev-ir/warp-cli/refs/heads/master/main.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Ramin-Setoodehnia/warp-cli/refs/heads/master/main.sh)
 ```
 
 ---
